@@ -1,8 +1,3 @@
-QUnit.module("money", {
-//	setup:function(assert){alert("setup money individual QUnit.test");},
-//	teardown:function(assert){alert("teardown money individual QUnit.test");}
-});
-
 QUnit.test("test construct money",function(assert)
 {
 	var m=new money(1,"EUR");
