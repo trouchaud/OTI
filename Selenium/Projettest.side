@@ -1,0 +1,106 @@
+{
+  "id": "39a12102-a36f-49d3-98c6-0c225d731eab",
+  "version": "1.1",
+  "name": "Projettest",
+  "url": "http://forge.fil.univ-lille1.fr",
+  "tests": [{
+    "id": "b6022c48-62e1-4275-a6df-f2eada2a52e0",
+    "name": "ProjetSele",
+    "commands": [{
+      "id": "802a2858-0e4a-4047-8db8-835fa37d0efa",
+      "comment": "",
+      "command": "open",
+      "target": "/OTI",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28253d0c-3d53-4058-abe9-8023c0098219",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1009",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db3c14b7-6940-42b5-969c-691d9429e7df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Timeline",
+      "targets": [
+        ["linkText=Timeline", "linkText"],
+        ["css=#liflmainnav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Timeline')]", "xpath:link"],
+        ["xpath=//div[@id='liflmainnav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/OTI/timeline')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf62d7a9-6e2c-48d2-86e5-355e099e87d0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Roadmap",
+      "targets": [
+        ["linkText=Roadmap", "linkText"],
+        ["css=#liflmainnav li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Roadmap')]", "xpath:link"],
+        ["xpath=//div[@id='liflmainnav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/OTI/roadmap')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fb7d6de-c5c4-41dd-b4f4-7d5042f4e4a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=#liflmainnav > ul > li.last > a", "css"],
+        ["css=.last:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Search')]", "xpath:link"],
+        ["xpath=//div[@id='liflmainnav']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/OTI/search')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"]
+      ],
+      "value": "Search"
+    }, {
+      "id": "edaa4871-785d-4c3a-bd1c-be36487a6025",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "OTI",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd8bba0f-558a-480c-b554-bbff5a77bef3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Timeline",
+      "targets": [
+        ["linkText=Timeline", "linkText"],
+        ["css=#liflmainnav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Timeline')]", "xpath:link"],
+        ["xpath=//div[@id='liflmainnav']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/OTI/timeline')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "Timeline"
+    }, {
+      "id": "3365726a-aac4-4a7a-8c49-6bd862db03c6",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "OTI",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a42b970d-e84c-4978-b1a0-91815cf2ae93",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b6022c48-62e1-4275-a6df-f2eada2a52e0"]
+  }],
+  "urls": ["http://forge.fil.univ-lille1.fr/"],
+  "plugins": []
+}
